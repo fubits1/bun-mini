@@ -8,8 +8,8 @@ export default {
       },
     })
       .then((res) => res.json())
-      .then((data) => data.joke);
-
-    return new Response(joke);
+      .then((data) => data);
+    console.log(joke);
+    return new Response(joke.joke);
   },
 };
